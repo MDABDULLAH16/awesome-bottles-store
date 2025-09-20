@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Stainless Steel Water Bottle",
+    "capacity_ml": 750,
+    "color": "Silver",
+    "price_usd": 15.99,
+    "image": "https://images.unsplash.com/photo-1580910051077-34aead8e0c47",
+    "lasting_duration": "5 years",
+    "description": "Durable stainless steel bottle, perfect for daily hydration and outdoor activities."
+  },
+  {
+    "id": 2,
+    "name": "Plastic Sports Bottle",
+    "capacity_ml": 1000,
+    "color": "Blue",
+    "price_usd": 7.5,
+    "image": "https://images.unsplash.com/photo-1599058917216-62d4b9f6f2f2",
+    "lasting_duration": "2 years",
+    "description": "Lightweight sports bottle with easy grip, ideal for gym and running."
+  },
+  {
+    "id": 3,
+    "name": "Glass Juice Bottle",
+    "capacity_ml": 500,
+    "color": "Transparent",
+    "price_usd": 12.0,
+    "image": "https://images.unsplash.com/photo-1560533625-0c2cbf4e2f4c",
+    "lasting_duration": "3 years",
+    "description": "Elegant glass bottle for juices and smoothies, eco-friendly and reusable."
+  },
+  {
+    "id": 4,
+    "name": "Thermal Coffee Flask",
+    "capacity_ml": 600,
+    "color": "Black",
+    "price_usd": 18.49,
+    "image": "https://images.unsplash.com/photo-1589363101793-7e7f3b479ca2",
+    "lasting_duration": "6 years",
+    "description": "Insulated coffee flask that keeps drinks hot or cold for hours."
+  },
+  {
+    "id": 5,
+    "name": "Reusable Eco Bottle",
+    "capacity_ml": 800,
+    "color": "Green",
+    "price_usd": 9.99,
+    "image": "https://images.unsplash.com/photo-1556912167-f556f1f39d4a",
+    "lasting_duration": "4 years",
+    "description": "Eco-friendly reusable bottle made with BPA-free material."
+  }
+]
