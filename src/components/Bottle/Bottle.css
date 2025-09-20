@@ -1,0 +1,69 @@
+.bottle-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  padding: 16px;
+}
+
+.bottle-card:hover {
+  transform: translateY(-5px);
+}
+
+.bottle-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bottle-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0 6px;
+}
+
+.bottle-seller {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.bottle-price {
+  color: #2c7a7b;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.bottle-stock {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.bottle-rating {
+  font-size: 0.9rem;
+  color: #e0a800;
+  margin-bottom: 10px;
+}
+
+.bottle-desc {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.bottle-btn {
+  background: #2c7a7b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.bottle-btn:hover {
+  background: #225e5f;
+}
