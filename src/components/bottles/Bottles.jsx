@@ -5,6 +5,7 @@ import {
   addToLocalStorage,
   getItemsFromLocalStorage,
 } from "../../utilities/localStorage";
+import Cart from "../Cart/Cart";
 
 const Bottles = ({ bottlesPromise }) => {
   const bottles = use(bottlesPromise);
@@ -28,17 +29,26 @@ const Bottles = ({ bottlesPromise }) => {
     if (!exitId) {
       const newCart = [...cart, bottle];
       setCart(newCart);
-
       addToLocalStorage(bottle.id);
     } else {
       alert("this product already added");
     }
   };
 
+  const handleRemoveCart = (id) => {
+    const cartItems = cart.filter((item) => item.id !== id);
+    setCart(cartItems);
+  };
+
   return (
     <div>
       <h1>Bottles: {bottles.length}</h1>
       <h2>Cart: {cart.length}</h2>
+      <div style={{ display: "flex" }}>
+        {cart.map((item) => (
+          <Cart handleRemoveCart={handleRemoveCart} cart={item}></Cart>
+        ))}
+      </div>
       <div className="bottles-container">
         {bottles.map((bottle) => (
           <Bottle
