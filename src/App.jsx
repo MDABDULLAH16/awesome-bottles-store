@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import "./App.css";
 import Bottles from "./components/bottles/Bottles";
+import Effect from "./components/Effect/Effect";
 
 const bottlesPromise = fetch("/public/bottles.json").then((res) => res.json());
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <h1>Welcome to Awesome Bottles Store</h1>
+      {/* <Effect></Effect> */}
       <Suspense fallback={<h1>Awesome Bottles are Coming...</h1>}>
         <Bottles bottlesPromise={bottlesPromise}></Bottles>
       </Suspense>
