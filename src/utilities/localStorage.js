@@ -25,7 +25,14 @@ const setItemIntoLocalStorage = (id) => {
   }
 };
 
+const remomeFromLocalStorage = (id) => {
+  const cart = getItemsFromLocalStorage();
+  const updatedCart = cart.filter((item) => item !== id);
+  saveIntoCart(updatedCart);
+};
+
 export {
   getItemsFromLocalStorage,
   setItemIntoLocalStorage as addToLocalStorage,
+  remomeFromLocalStorage as removeFromLocalStorage,
 };

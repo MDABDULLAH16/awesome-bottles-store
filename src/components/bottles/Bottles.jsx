@@ -4,6 +4,7 @@ import "./Bottles.css";
 import {
   addToLocalStorage,
   getItemsFromLocalStorage,
+  removeFromLocalStorage,
 } from "../../utilities/localStorage";
 import Cart from "../Cart/Cart";
 
@@ -38,6 +39,7 @@ const Bottles = ({ bottlesPromise }) => {
   const handleRemoveCart = (id) => {
     const cartItems = cart.filter((item) => item.id !== id);
     setCart(cartItems);
+    removeFromLocalStorage(id);
   };
 
   return (
